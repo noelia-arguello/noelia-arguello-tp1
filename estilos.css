@@ -1,0 +1,32 @@
+/* css document */
+@charset "UTF-8";
+
+@font-face {
+    font-family: "nunito-regular";
+    src: url(fonts/Nunito-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "nunito-black";
+    src: url(fonts/Nunito-Black.ttf);
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "nunito-italic";
+    src: url(fonts/Nunito-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+h1 {font-family: 'nunito-black', sans-serif;
+color: crimson;}
+
+h2 {font-family: 'nunito-italic', sans-serif;
+color: palevioletred;}
+
+p {font-family: 'nunito-regular', sans-serif;
+color: black;}
