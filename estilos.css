@@ -23,10 +23,29 @@
 }
 
 h1 {font-family: 'nunito-black', sans-serif;
-color: crimson;}
+color: rgb(207, 19, 56); font-size: 2,5rem}
 
 h2 {font-family: 'nunito-italic', sans-serif;
-color: palevioletred;}
+color: rgb(207, 19, 56); font-size: 2rem;}
 
 p {font-family: 'nunito-regular', sans-serif;
-color: black;}
+color: black; font-size: 1rem;}
+
+ul {font-family: 'nunito-regular', sans-serif;
+color: black; font-size: 1rem; list-style: none;}
+
+* {text-decoration: none}
+
+a {font-family: 'nunito-regular', sans-serif; font-size: 1rem; color:  rgb(207, 19, 56);}
+
+body
+{background-color: rgb(204, 214, 195); }
+
+header a {
+    background-color: antiquewhite;
+    padding: 2vh;
+min-height: 20vh;
+line-height:3rem
+margin: 30px;
+border-radius: 25px}
+
