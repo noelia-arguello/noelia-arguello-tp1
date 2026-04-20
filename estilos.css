@@ -2,50 +2,124 @@
 @charset "UTF-8";
 
 @font-face {
+    font-family: "calistoga-regular";
+    src: url(fonts/Calistoga-Regular.ttf);
+    font-weight: normal;
+    font-style: normal; }
+
+@font-face {
     font-family: "nunito-regular";
     src: url(fonts/Nunito-Regular.ttf);
     font-weight: normal;
-    font-style: normal;
-}
+    font-style: normal; }
 
 @font-face {
     font-family: "nunito-black";
     src: url(fonts/Nunito-Black.ttf);
     font-weight: bolder;
-    font-style: normal;
-}
+    font-style: normal; }
 
 @font-face {
     font-family: "nunito-italic";
     src: url(fonts/Nunito-Italic.ttf);
     font-weight: normal;
-    font-style: italic;
-}
+    font-style: italic; }
 
-h1 {font-family: 'nunito-black', sans-serif;
-color: rgb(207, 19, 56); font-size: 2,5rem}
+* {
+    font-family: 'nunito-regular', sans-serif;
+    color: black;
+    font-size: 1.2rem;
+    list-style: none;
+    text-decoration: none;
+    text-align:center;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-wrap: balance;
+    line-height: 1.8rem; }
 
-h2 {font-family: 'nunito-italic', sans-serif;
-color: rgb(207, 19, 56); font-size: 2rem;}
+h1 {
+    font-family: 'calistoga-regular', serif;
+    color: rgb(207, 19, 56);
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin:3vh; }
+
+h2 {
+    font-family: 'nunito-black', sans-serif;
+    color: rgb(207, 19, 56); 
+    font-size:  1.2rem;
+    margin:1vh;}
 
 p {font-family: 'nunito-regular', sans-serif;
-color: black; font-size: 1rem;}
+   color: black;
+      max-width: 800px; }
 
 ul {font-family: 'nunito-regular', sans-serif;
-color: black; font-size: 1rem; list-style: none;}
+   color: black;
+      max-width: 800px; }
 
-* {text-decoration: none}
+a {font-family: 'nunito-regular', sans-serif; 
+        color:  rgb(207, 19, 56); }
 
-a {font-family: 'nunito-regular', sans-serif; font-size: 1rem; color:  rgb(207, 19, 56);}
+body {background-color: rgb(255, 227, 246); }
 
-body
-{background-color: rgb(204, 214, 195); }
+#hero {
+    background-color: rgb(255, 164, 216);
+    background-size:cover;
+    background-position: center;
+    height:250px;
+    padding:0vw 3vw; }
 
-header a {
-    background-color: antiquewhite;
-    padding: 2vh;
-min-height: 20vh;
-line-height:3rem
-margin: 30px;
-border-radius: 25px}
+nav  {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2px;
+    flex-direction: row;
+    gap:3vh;
+    width:100vw;
+    max-width:1800px;
+    padding:0vw 3vw; }
+
+#hero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center; }
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 5vw; }
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } 
+
+footer a {
+    background-color: rgb(255, 164, 216);
+    padding: 5px;
+    min-height: 20vh;
+    line-height:3rem;
+    border-radius: 25px; }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
 
