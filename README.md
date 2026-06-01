@@ -11,7 +11,7 @@ Con la información definitiva cargada, utilicé el sistema de prototipado de Fi
 Finalmente, ordené el archivo renombrando las capas con etiquetas semánticas y apliqué Auto Layout de manera concéntrica (desde los elementos internos hacia los contenedores padre).
 
 3. HTML y CSS
-El traspaso al código HTML se vio facilitado por la organización previa de las capas en Figma, lo que me permitió comprender con mayor claridad la segmentación semántica mediante <section>, <div> y demás etiquetas estructurales.
+El traspaso al código HTML se vio facilitado por la organización previa de las capas en Figma, lo que me permitió comprender con mayor claridad la segmentación semántica mediante section, div y demás etiquetas estructurales.
 La etapa más compleja radicó en la implementación de las propiedades de Flexbox y en la gestión de las diferentes unidades de medida (píxeles, porcentajes, vh, rem); requirió un tiempo de experimentación asimilar cuál era la unidad óptima para cada contexto. 
 El desarrollo de una hoja de estilos unificada (estilos.css) representó un desafío. Debido a la extensión del archivo, tengo dudas sobre posibles redundancias en el código, aunque a nivel general la interfaz se comporta como lo planifiqué.
 
