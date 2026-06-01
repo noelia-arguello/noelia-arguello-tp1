@@ -18,7 +18,39 @@
             </nav>
         </header>
         
-        <main>
+        <main class="main-contacto">
+            <section class="contacto">
+                <h1>Contacto</h1>
+                <form method="post" action="" target="_blank" enctype="text/plain">
+                    <label for="nombre">* Nombre</label>
+                    <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre completo" required>
+                    <label for="Email">* Email</label>
+                    <input type="email" name="Email" id="Email" required >
+                    <label for="Telefono">Teléfono</label>
+                    <input type="tel" name="Telefono" id="Telefono" placeholder="(000)0000000000">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="Mensaje" id="Mensaje" maxlength="600"></textarea>
+                </form>
+            </section>
+            <section class="intereses">
+                <h2>Intereses</h2>
+                <form method="post" action="mailto:arguello.noelia.93@gmail.com?subject='Email enviado desde el formulario'" target="blank" enctype="text/plain">
+                    <label>Diseño web <input type="checkbox" name="intereses" value="Diseño web" id="Diseño web"></label>
+                    <label>Packaging <input type="checkbox" name="intereses" value="Packaging" id="Packaging"></label>
+                    <label>Diseño editorial <input type="checkbox" name="intereses" value="Diseño editorial" id="Diseño editorial"></label>
+                    <label>Diseño de pósters <input type="checkbox" name="intereses" value="Diseño de pósters" id="Diseño de pósters"></label>
+                    <label>Diseño identitário <input type="checkbox" name="intereses" value="Diseño identitário" id="Diseño identitário"></label>
+                    <label>Diseño de logotipo <input type="checkbox" name="intereses" value="Diseño de logotipo" id="Diseño de logotipo"></label>
+                    <label>Ilustración <input type="checkbox" name="intereses" value="Ilustración" id="Ilustración"></label>
+                </form>
+            </section>
+            <section class="botones">
+                <img src="img/svg/logo-gris-oscuro.svg" alt="Logo oscuro" width="238" height="270">
+                <form method="post" target="blank" enctype="text/plain">
+                    <input type="reset" value="borrar">
+                    <input type="submit" value="Enviar" formenctype="multipart/form-data">
+                </form>
+            </section>
         </main>
         
         <footer>

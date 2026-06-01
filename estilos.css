@@ -135,14 +135,8 @@ main {
     background-color: #EDE9F5; }
 
 .ilustraciones {
-    display: flex;
-    width: 100%;
-    max-width: 1779px;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 113px;
-    flex-wrap: wrap; }
+    flex-direction: row;
+    justify-content: center; }
 
 .texto-ilustraciones {
     display: flex;
@@ -167,21 +161,21 @@ main {
     width: 100%;
     max-width: 1749px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    align-content: center;
     gap: 20px; }
 
 .galeria-diseños {
-    display: grid;
+    display: flex
     width: 100%;
-    row-gap: 14px;
-    column-gap: 15px;
+    max-width: 867;
+    align-items: center;
+    align-content: center;
+    gap: 15px;
+    flex-shrink: 0;
     align-self: stretch;
-    grid-template-rows: repeat(3,minmax(0,1fr));
-    grid-template-columns: repeat(2,minmax(0,1fr));
-    grid-row: span 1;
-    grid-column: span 1;
-    grid-auto-flow: row;
-    justify-self: stretch;}
+    flex-wrap: wrap;
+    aspect-ratio: 57/53; }
 
 footer {
     background: #2B2D42;
@@ -208,7 +202,182 @@ li {
 img {
     max-width: 100%;
     height: auto;
-    object-fit: cover;
-}
+    object-fit: cover; }
 
 /* css del sobre mi */
+
+.perfil {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch; }
+
+.quien-soy {
+    display: flex;
+    width: 780px;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px; }
+
+.botonera {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 31px;
+    align-self: stretch; }
+
+summary {
+    color: #2B2D42;
+    background-color: #A9AABC;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'noto-bold', sans-serif;
+    font-size: 1.5625rem;
+    font-weight: 700;
+    line-height: normal; }
+
+
+/* css del contacto */
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+textarea {
+    width: 100%;
+    height: 35px;
+    background-color: #A9AABC;
+    padding: 5px;
+}
+
+textarea {
+    height: 100px; 
+    resize: none;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+input[type="submit"], 
+input[type="reset"] {
+    height: 40px;
+    width: 140px;
+    background-color: #A9AABC;
+    color: #2B2D42;
+    cursor: pointer;
+    border: none;
+}
+
+.borrar {
+    background-color: #A9AABC;}
+
+.enviar {
+    background-color: #A9AABC; }
+
+.button-form  {
+    height: 30px;
+    width: 150;
+    background-color: #A9AABC; 
+    color: #2B2D42;}
+
+.main-contacto {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 20px;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    box-sizing: border-box; }
+
+.contacto {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    flex-shrink: 0; }
+
+.intereses {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    flex-shrink: 0; }
+
+.intereses form label {
+    color: #2B2D42;
+    font-family: 'noto-bold', sans-serif;
+    font-size: 1.5625rem;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 10px; }
+
+.botones {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0; }
+
+.main-contacto form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; }
+
+/* css de galería */
+
+.descripcion-diseño {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 42px;
+    width: 100%;
+    max-width: 1749px;
+    margin: 0 auto;}
+
+/* Responsive en 600px para el index */
+
+@media screen and (max-width: 600px) {
+
+    .galeria-diseños img {
+        width: 100%;
+        min-width: 276px;
+        min-height: 170px; }
+
+    .galeria-ilustraciones img  {
+        width: 100%;
+        min-width: 133px;
+        min-height: 220px; }
+
+        .galeria-diseños {
+        flex-direction: column;
+        padding: 20px;
+        gap: 40px; }
+    }
+
+/* aplicación de positions para contacto.html */
+
+.botones img  {
+        position: relative;
+        right: 50px;
+    }
+
+.botones input  {
+        position: relative;
+        left: 50px;
+    }
+
+
+.intereses {
+        position: relative;
+        top: 50px;
+    }
